@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset='utf-8' />
+        <title>Express inquires</title>
+		<link rel='stylesheet' href='style/main.css' type='text/css' />
+    </head>
+    <body>
+		<div class='f_left'>
+			<div class='title'>
+				<h1>选择快递公司</h1>
+			</div>
+			<ul id='company_list'>
+				<li><input name="posttype" type="radio" value="shentong" id="shentong" />申通快递</li>
+				<li><input name="posttype" type="radio" value="yuantong" id="yuantong" />圆通速递</li>
+				<li><input name="posttype" type="radio" value="zhaijisong" id="zhaijisong" />急宅送</li>
+				<li><input name="posttype" type="radio" value="tiantian" id="tiantian" />天天快递</li>
+				<li><input name="posttype" type="radio" value="shunfeng" id="shunfeng" />顺丰速运</li>
+				<li><input name="posttype" type="radio" value="zhongtiewuliu" id="zhongtiewuliu" />中铁快运</li>
+				<li><input name="posttype" type="radio" value="zhongyouwuliu" id="zhongyouwuliu" />中邮物流</li>
+				<li><input name="posttype" type="radio" value="wenjiesudi" id="wenjiesudi" />文捷航空</li>
+				<li><input name="posttype" type="radio" value="dhl" id="dhl" />DHL</li>
+			</ul>
+			<div id='query' class='clear'>
+				<form action='' onsubmit='return request()'>
+					<input id='postid' type='text' autofocus='true' placeholder='需要查询的单号' />
+					<input id='submit' type='button' value='查 询' />
+				</form>
+			</div>
+		</div>
+		<div class='f_right hide'>
+			<div class='title'>
+				<h1>历史查单</h1>
+				<a href='#' id='clear'>清除</a>
+			</div>
+			<ul id='history_list'></ul>
+		</div>
+		<div id='result' class='clear hide'>
+			<p>
+				<span class='result_time title'><b>时间</b></span>
+				<span class='result_msg title'><b>地点和跟踪进度</b></span>
+			</p>
+			<div id='result_list_wrap'>
+				<ul id='result_list' class='clear'></ul>
+			</div>
+		</div>
+		<div id='loading' class='clear'></div>
+		<div id='message' class='clear hide'></div>
+		<div id='footer' class='clear'></div>
+		<script src='script/main.js'></script>
+    </body>
+</html>
