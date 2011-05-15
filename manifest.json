@@ -1,17 +1,19 @@
-{
+﻿{
    "name": "Express Inquires",
    "version": "1.0",
    "description": "快递查询",
-   "browser_action": {
-	"default_icon": "img/64.png",
-	"popup": "popup.html"
-   },
    "icons": {
-	"64": "img/64.png"
+	"128": "img/ico_128.png",
+	"64": "img/ico_64.png",
+	"32": "img/ico_32.png"
+   },
+   "browser_action": {
+	"default_icon": "img/ico_128.png",
+	"default_title": "Express Inquires",
+	"default_popup": "popup.html"
    },
    "permissions": [
 	"tabs",
-	"http://*.kuaidi100.com/*",
-	"https://*.kuaidi100.com/*"
+	"http://*.kuaidi100.com/*"
    ]
 }

@@ -9,8 +9,8 @@
         url = 'http://api.kuaidi100.com/api?id=d56af859f50086e3&com={com}&nu={postid}&show=0&muti=1&order=asc',
 
         STRING_TEMPLATE = {
-            RESULT: '<li><span class="result_time">{time}</span><span class="result_msg">{context}</span></li>',
-            HISTORY: '<li com="{com}" postid="{postid}"><span class="company f_left">{txt}</span><span class="waybill f_left">{postid}</span></li>'
+            RESULT: '<li><span class="result_time">{time}</span><span class="result_msg"><div>{context}</div></span></li>',
+            HISTORY: '<li com="{com}" postid="{postid}"><span class="company f_left">{txt}</span><span class="waybill f_left"><div>{postid}</div></span></li>'
         },
 
         $ = function(elem) {
@@ -25,9 +25,12 @@
         $MoreList= $('more_list'),
         $Submit  = $('submit'),
         $Clear   = $('clear'),
-        $ResultList = $('result_list'),
+		$Checked = $('checked'),
+		$CheckedName = $('checked_name'),
+        $ResultList  = $('result_list'),
         $HistoryList = $('history_list'),
-        $CompanyList = $('company_list'),
+        $CompanyList = doc.querySelectorAll('.company_list'),
+		$MoreCompanyListWrap = $('more_company_list_wrap'),
 
         forEach = function(list, func) {
             var l = list.length;
@@ -151,8 +154,11 @@
 
         $Clear.addEventListener(EventClick, History.del);
         $Submit.addEventListener(EventClick, request);
-        $CompanyList.addEventListener(EventClick, clickCompanyList);
         $HistoryList.addEventListener(EventClick, clickHistoryList);
+		forEach($CompanyList, function(elem, i) {
+				elem.addEventListener(EventClick, clickCompanyList);
+			}
+		);
     };
 
     function showHistoryList() {
@@ -185,6 +191,14 @@
         target.checked = true;
         com = target.value;
         txt = target.nextSibling.nodeValue;
+
+		$Checked.className = SPACE;
+		DOM.html($CheckedName, txt);
+
+		DOM.hide($MoreCompanyListWrap);
+		setTimeout(function() {
+			$MoreCompanyListWrap.style.display = SPACE;
+		}, 50);
     };
 
     function clickHistoryList(e) {
@@ -198,6 +212,9 @@
         $(com).checked = true;
         $PostId.value = target.getAttribute('postid');
         request();
+
+		$Checked.className = SPACE;
+		DOM.html($CheckedName, $(com).nextSibling.nodeValue);
     };
 
     function check() {
