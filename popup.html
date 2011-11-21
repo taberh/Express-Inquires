@@ -1,188 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8' />
-        <title>Express inquires</title>
-        <link rel='stylesheet' href='style/main.css' type='text/css' />
-    </head>
-    <body>
-        <div class='f_left' style='margin-bottom:20px'>
-            <div class='title'>
-                <h1>选择快递公司</h1>
-				<span href='#' id='more'>更多>>
-				<div id='more_company_list_wrap' class='hide'>
-					<div>A
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="aae" id="aae" />AAE</li>
-							<li><input name="posttype" type="radio" value="anxinda" id="anxinda" />安信达</li>
-							<li><input name="posttype" type="radio" value="anjie" id="anjie" />安捷</li>
-						</ul>
-					</div>
-					<div>B
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="bht" id="bht" />BHT</li>
-							<li><input name="posttype" type="radio" value="baifudongfang" id="baifudongfang" />百福东方</li>
-						</ul>
-					</div>
-					<div>C
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="cces" id="cces" />希伊艾斯快递</li>
-						</ul>
-					</div>
-					<div>D
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="dsukuaidi" id="dsukuaidi" />D速</li>
-							<li><input name="posttype" type="radio" value="dpex" id="dpex" />DPEX</li>
-							<li><input name="posttype" type="radio" value="datianwuliu" id="datianwuliu" />大田</li>
-							<li><input name="posttype" type="radio" value="debangwuliu" id="debangwuliu" />德邦</li>
-						</ul>
-					</div>
-					<div>F
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="feikangda" id="feikangda" />飞康达</li>
-						</ul>
-					</div>
-					<div>G
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="guangdongyouzhengwuliu" id="guangdongyouzhengwuliu" />广东邮政</li>
-							<li><input name="posttype" type="radio" value="ganzhongnengda" id="ganzhongnengda" />港中能达</li>
-						</ul>
-					</div>
-					<div>H
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="huitongkuaidi" id="huitongkuaidi" />汇通</li>
-						</ul>
-					</div>
-					<div>J
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="jinguangsudikuaijian" id="jinguangsudikuaijian" />京广</li>
-							<li><input name="posttype" type="radio" value="jjwl" id="jjwl" />佳吉</li>
-							<li><input name="posttype" type="radio" value="jiayiwuliu" id="jiayiwuliu" />佳怡</li>
-							<li><input name="posttype" type="radio" value="jixinda" id="jixinda" />急先达</li>
-						</ul>
-					</div>
-					<div>K
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="kuaijiesudi" id="kuaijiesudi" />快捷速运</li>
-						</ul>
-					</div>
-					<div>L
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="kuaijiesudi" id="kuaijiesudi" />联昊通</li>
-							<li><input name="posttype" type="radio" value="longbanwuliu" id="longbanwuliu" />龙邦</li>
-							<li><input name="posttype" type="radio" value="fedex" id="fedex" />联邦快递</li>
-						</ul>
-					</div>
-					<div>M
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="minghangkuaidi" id="minghangkuaidi" />民航快递</li>
-						</ul>
-					</div>
-					<div>P
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="peisihuoyunkuaidi" id="peisihuoyunkuaidi" />配思快运</li>
-						</ul>
-					</div>
-					<div>Q
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="quanyikuaidi" id="quanyikuaidi" />全一</li>
-						</ul>
-					</div>
-					<div>S
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="shenghuiwuliu" id="shenghuiwuliu" />盛辉快件</li>
-							<li><input name="posttype" type="radio" value="suer" id="suer" />速尔</li>
-						</ul>
-					</div>
-					<div>T
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="tiandihuayu" id="tiandihuayu" />天地华宇</li>
-						</ul>
-					</div>
-					<div>W
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="wxwl" id="wxwl" />万象</li>
-							<li><input name="posttype" type="radio" value="wxwl" id="wxwl" />伍圆</li>
-						</ul>
-					</div>
-					<div>X
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="xingchengjibian" id="xingchengjibian" />星晨急便</li>
-							<li><input name="posttype" type="radio" value="xinhongyukuaidi" id="xinhongyukuaidi" />鑫飞鸿</li>
-							<li><input name="posttype" type="radio" value="cces" id="cces" />希伊艾斯</li>
-							<li><input name="posttype" type="radio" value="xinbangwuliu" id="xinbangwuliu" />新邦</li>
-							<li><input name="posttype" type="radio" value="xinfengwuliu" id="xinfengwuliu" />信丰</li>
-						</ul>
-					</div>
-					<div>Y
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="yafengsudi" id="yafengsudi" />亚风</li>
-							<li><input name="posttype" type="radio" value="youshuwuliu" id="youshuwuliu" />优速</li>
-							<li><input name="posttype" type="radio" value="yuanweifeng" id="yuanweifeng" />源伟丰</li>
-							<li><input name="posttype" type="radio" value="yibangwuliu" id="yibangwuliu" />一邦</li>
-							<li><input name="posttype" type="radio" value="yuanchengwuliu" id="yuanchengwuliu" />远成</li>
-							<li><input name="posttype" type="radio" value="yuefengwuliu" id="yuefengwuliu" />越丰</li>
-							<li><input name="posttype" type="radio" value="yuntongkuaidi" id="yuntongkuaidi" />运通</li>
-							<li><input name="posttype" type="radio" value="yuanzhijiecheng" id="yuanzhijiecheng" />元智捷诚</li>
-							<li style='width:150px;'><input name="posttype" type="radio" value="youzhengguoji" id="youzhengguoji" />邮政国内包裹/挂号信</li>
-						</ul>
-					</div>
-					<div>Z
-						<ul class='company_list'>
-							<li><input name="posttype" type="radio" value="aae" id="aae" />中铁快运</li>
-							<li><input name="posttype" type="radio" value="aae" id="aae" />中邮物流</li>
-						</ul>
-					</div>
-				</div>
-				</span>
-            </div>
-			<h2>常用国内快递</h2>
-            <ul class='company_list'>
-                <li><input name="posttype" type="radio" value="ems" id="ems" />EMS</li>
-                <li><input name="posttype" type="radio" value="yuantong" id="yuantong" />圆通速递</li>
-                <li><input name="posttype" type="radio" value="shentong" id="shentong" />申通快递</li>
-                <li><input name="posttype" type="radio" value="shunfeng" id="shunfeng" />顺丰速运</li>
-                <li><input name="posttype" type="radio" value="zhongtong" id="zhongtong" />中通速递</li>
-                <li><input name="posttype" type="radio" value="yunda" id="yunda" />韵达快运</li>
-                <li><input name="posttype" type="radio" value="zhaijisong" id="zhaijisong" />急宅送</li>
-                <li><input name="posttype" type="radio" value="tiantian" id="tiantian" />天天快递</li>
-            </ul>
-			<h2 class='clear'>常用国际快递</h2>
-			<ul class='company_list'>
-				<li><input name="posttype" type="radio" value="fedex" id="fedex" />FedEx</li>
-				<li><input name="posttype" type="radio" value="tnt" id="tnt" />TNT</li>
-				<li><input name="posttype" type="radio" value="ups" id="ups" />UPS</li>
-				<li><input name="posttype" type="radio" value="dhl" id="dhl" />DHL</li>
-			</ul>
-			<h3 id='checked' class='hide'>当前选择：<span id='checked_name'>天天快递</span></h3>
-            <div id='query' class='clear'>
-                <form action='' onsubmit='return request()'>
-                    <input id='postid' type='text' placeholder='需要查询的单号' />
-                    <input id='submit' type='button' value='查 询' />
-                </form>
-            </div>
-        </div>
-        <div class='f_right hide'>
-            <div class='title'>
-                <h1>历史查单</h1>
-                <a href='#' id='clear'>清除</a>
-            </div>
-            <ul id='history_list'></ul>
-        </div>
-        <div id='result' class='clear hide'>
-            <div>
-                <span class='result_time title'><b>时间</b></span>
-                <span class='result_msg title'><div><b>地点和跟踪进度</b></div></span>
-            </div>
-            <div id='result_list_wrap'>
-                <ul id='result_list' class='clear'></ul>
-            </div>
-        </div>
-        <div id='loading' class='clear hide'></div>
-        <div id='message' class='clear hide'>aaaa</div>
-        <div id='footer' class='clear'>
-			Developed by 2011 <a href="http://taberh.me" target="_blank">Taber.huang</a>&nbsp;&nbsp;Powered by <a href="http://www.kuaidi100.com" target="_blank">友商快递查询</a>
+<head>
+<meta charset='utf-8' />
+<title>快递100</title>
+<link rel='stylesheet' href='style/app.css' type='text/css' />
+</head>
+<body>
+
+<div id="wrapper" class="clearfix">
+	<section>
+		<ul id="desktopCompany" class="clearfix"></ul>
+		<ul id="fullCompany" class="clearfix"></ul>
+
+		<div id="more">
+			<button type="button">【查看全部】</button>
 		</div>
-        <script src='script/main.js'></script>
-    </body>
+
+		<p id="thumbnav">当前选择:<em></em></p>
+
+		<div id="search">
+			<input type="text" placeholder="请输入单号" />
+			<button type="submit" title="查询">查询</button>
+		</div>
+
+		<p id="tips"></p>
+
+		<div id="loading"></div>
+	</section>
+
+	<aside>
+		<ul id="historyQuery"></ul>
+		
+		<div id="clear">
+			<button type="button">【清空】</button>
+		</div>
+	</aside>
+</div>
+
+<section id="result">
+	<div class="clearfix">
+		<span class="time"><strong>时间</strong></span>
+		<span class="content"><strong>进度</strong></span>
+	</div>
+
+	<ul></ul>
+</section>
+
+<script src="script/app.js"></script>
+</body>
 </html>

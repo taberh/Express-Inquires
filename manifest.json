@@ -1,19 +1,17 @@
-﻿{
-   "name": "Express Inquires",
-   "version": "1.0",
-   "description": "快递查询",
-   "icons": {
-	"128": "img/ico_128.png",
-	"64": "img/ico_64.png",
-	"32": "img/ico_32.png"
-   },
+{
    "browser_action": {
-	"default_icon": "img/ico_128.png",
-	"default_title": "Express Inquires",
-	"default_popup": "popup.html"
+      "default_icon": "images/ico_128.png",
+      "popup": "popup.html"
    },
-   "permissions": [
-	"tabs",
-	"http://*.kuaidi100.com/*"
-   ]
+   "description": "\u5FEB\u9012\u67E5\u8BE2\u662F\u7531Taber\u4E3A\u53CB\u5546\u7F51\u5FEB\u9012100\u5F00\u53D1\u7684\u67E5\u8BE2\u63D2\u4EF6\uFF0C\u63D0\u4F9B\u6D77\u91CF\u7684\u5FEB\u9012\u67E5\u8BE2\u670D\u52A1\uFF0C\u6DB5\u76D6\u8FD1\u767E\u5BB6\u5E38\u7528\u5FEB\u9012\u516C\u53F8\uFF0C\u67E5\u8BE2\u65E0\u9700\u9A8C\u8BC1\u7801\uFF0C\u652F\u6301\u624B\u673A\u67E5\u5FEB\u9012\uFF0C\u5E76\u4E3AB2C\u7B49\u7F51\u7EDC\u5E94\u7528\u63D0\u4F9B\u514D\u8D39\u7684\u5FEB\u9012\u67E5\u8BE2\u63A5\u53E3API\u3002",
+   "icons": {
+      "128": "images/ico_128.png",
+      "32": "images/ico_32.png",
+      "64": "images/ico_64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDN2+/xpeovAyPLJAExFo467X84kxk+PYtiy8raAgPTWZkawTblSvpjPndQYE3ivpg+t9wVI4LJW8JnyCrSwAZIrEwByntYVcjm632LEl4AAfJiGQ9xHHGrjmJBuSq2wTOIHfdpTs/QxoaNw5W93ETE7hlVETSVOkrzNwjCZQ9iPQIDAQAB",
+   "name": "\u5FEB\u9012\u67E5\u8BE2",
+   "permissions": [ "tabs", "http://*.kuaidi100.com/*", "https://*.kuaidi100.com/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.1.2"
 }
