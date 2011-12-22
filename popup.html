@@ -3,7 +3,7 @@
 <head>
 <meta charset='utf-8' />
 <title>快递100</title>
-<link rel='stylesheet' href='style/app.css' type='text/css' />
+<link rel='stylesheet' href='style/app.min.css' type='text/css' />
 </head>
 <body>
 
@@ -19,8 +19,9 @@
 		<p id="thumbnav">当前选择:<em></em></p>
 
 		<div id="search">
-			<input type="text" placeholder="请输入单号" />
+			<input id="keyword" type="text" placeholder="请输入单号" />
 			<button type="submit" title="查询">查询</button>
+      <input id="notes" type="text" placeholder="添加备注" maxlength="6" />
 		</div>
 
 		<p id="tips"></p>
@@ -46,6 +47,6 @@
 	<ul></ul>
 </section>
 
-<script src="script/app.js"></script>
+<script src="script/app.min.js"></script>
 </body>
 </html>

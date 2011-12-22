@@ -1,4 +1,6 @@
 {
+   "name":"快递查询",
+   "version": "2.2.2",
    "browser_action": {
       "default_icon": "images/ico_128.png",
       "popup": "popup.html"
@@ -9,9 +11,5 @@
       "32": "images/ico_32.png",
       "64": "images/ico_64.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDN2+/xpeovAyPLJAExFo467X84kxk+PYtiy8raAgPTWZkawTblSvpjPndQYE3ivpg+t9wVI4LJW8JnyCrSwAZIrEwByntYVcjm632LEl4AAfJiGQ9xHHGrjmJBuSq2wTOIHfdpTs/QxoaNw5W93ETE7hlVETSVOkrzNwjCZQ9iPQIDAQAB",
-   "name": "\u5FEB\u9012\u67E5\u8BE2",
-   "permissions": [ "tabs", "http://*.kuaidi100.com/*", "https://*.kuaidi100.com/*" ],
-   "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "2.1.2"
+   "permissions": [ "tabs", "http://*.kuaidi100.com/*", "https://*.kuaidi100.com/*", "http://express.yesnap.com/*" ]
 }
